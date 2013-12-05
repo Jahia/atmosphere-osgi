@@ -14,10 +14,7 @@
  */
 package org.barjo.atmosgi;
 
-import org.atmosphere.cpr.AtmosphereHandler;
-import org.atmosphere.cpr.AtmosphereInterceptor;
-import org.atmosphere.cpr.Broadcaster;
-import org.atmosphere.cpr.BroadcasterFactory;
+import org.atmosphere.cpr.*;
 
 import java.util.List;
 
@@ -58,4 +55,6 @@ public interface AtmosphereService {
      * @param mapping The existing AtmosphereHandler mapping.
      */
     void removeAtmosphereHandler(String mapping);
+
+    void addAsyncSupportListenerAdapter(AsyncSupportListener asyncSupportListener);
 }

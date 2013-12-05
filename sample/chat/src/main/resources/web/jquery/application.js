@@ -13,7 +13,7 @@ $(function () {
     var transport = 'sse';
 
     // We are now ready to cut the request
-    var request = { url: 'http://' + document.location.host.toString() + '/atmosphere/chat',
+    var request = { url: 'http://' + document.location.host.toString() + '/modules/atmosphere/chat',
         contentType : "application/json",
         logLevel : 'debug',
         shared : true,
